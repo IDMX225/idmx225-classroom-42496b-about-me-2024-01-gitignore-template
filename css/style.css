@@ -99,6 +99,21 @@ figcaption{
     border-color: #E18D65;
 }
 
+.article h2{
+    font-family: "Press Start 2P", serif;
+    text-align: center;
+    padding: 10px;
+    border-style: double;
+    border-width: 1rem;
+    border-color: #41A4E1;
+    background-color: #B9E6E4;
+}
+
+.article p{
+    font-family: "Roboto Mono", serif;
+    text-align: center;
+}
+
 footer{
     font-family: "Press Start 2P", serif;
     font-size:12px;
@@ -108,3 +123,4 @@ footer{
     border-style: outset;
     border-color: black;
 }
+
