@@ -1,6 +1,6 @@
 body {
-    background-color:#E1DCAE ;
-}
+    background-color:#e1dcae8f ;
+} 
 
 header {
     font-family: "Press Start 2P", serif;
@@ -55,6 +55,48 @@ p {
 .listhead {
     font-family: "Press Start 2P", serif;
     text-align: left;
+}
+
+#photogallery{
+    font-family: "Press Start 2P", serif;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: #E1DCAE;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: #E0CA01;
+    border-radius: 30px;
+}
+
+.gallery{
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: #00000015;
+    border-style: solid;
+    border-color: #e4746e;
+    border-width: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.452);
+}
+
+.gallery img{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding-top: 15px;
+}
+
+figcaption{
+    display: block;
+    margin: auto;
+    width: 50%;
+    font-family: "Roboto Mono", serif;
+    text-align: center;
+    border-style: outset;
+    border-width: 3px;
+    background-color: #E3C8BD;
+    border-color: #E18D65;
 }
 
 footer{
