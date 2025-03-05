@@ -112,6 +112,11 @@ figcaption{
 .article p{
     font-family: "Roboto Mono", serif;
     text-align: center;
+    border-style: inset;
+    border-width: 5px;
+    border-color:#41A4E1;
+    box-shadow: 5px 5px 5px #0b26375f;
+
 }
 
 footer{
