@@ -109,13 +109,32 @@ figcaption{
     background-color: #B9E6E4;
 }
 
-.article p{
+.article {
     font-family: "Roboto Mono", serif;
-    text-align: center;
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
     border-style: inset;
     border-width: 5px;
     border-color:#41A4E1;
     box-shadow: 5px 5px 5px #0b26375f;
+
+}
+
+#articlecontent {
+    padding: 0.3rem 0;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#articlecontent p::first-letter {
+    color:#41A4E1;
+    float: left;
+    font-size: 3rem;
+    padding: .25em;
+    line-height: .65;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.358);
 
 }
 
