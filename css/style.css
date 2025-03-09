@@ -1,5 +1,6 @@
 body {
-    background-color:#e1dcae8f ;
+    background-color:#e1dcae8f;
+    font-family: "Roboto Mono", serif;
 } 
 
 /* Styling for intro */
@@ -44,6 +45,17 @@ p {
     border-color:#E18D65;
 }
 
+/* styling for footer */
+footer{
+    font-family: "Press Start 2P", serif;
+    font-size:14px;
+    color: black;
+    text-align: center;
+    background-color: #e0ca01;
+    border-style: outset;
+    border-color: black;
+}
+
 /* styling for hobbies list */
 #list {
     font-family: "Roboto Mono", serif;
@@ -52,6 +64,9 @@ p {
     border-width: 5px;
     border-color: #41A4E1;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .listhead {
@@ -60,7 +75,7 @@ p {
 }
 
 /* styling for photo gallery */
-#photogallery{
+#galleryheading{
     font-family: "Press Start 2P", serif;
     padding: 20px;
     margin: 20px;
@@ -72,34 +87,22 @@ p {
     border-radius: 30px;
 }
 
-.gallery{
-    display: block;
-    margin: auto;
-    width: 50%;
+#gallery{
     background-color: #00000015;
     border-style: solid;
     border-color: #e4746e;
     border-width: 5px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.452);
+    margin-bottom: 20px;
 }
 
-.gallery img{
-    display: block;
-    margin: auto;
-    width: 50%;
-    padding-top: 15px;
+#gallery img {
+    max-width: 100%;
+
 }
 
-figcaption{
-    display: block;
-    margin: auto;
-    width: 50%;
-    font-family: "Roboto Mono", serif;
+#gallery figcaption{
     text-align: center;
-    border-style: outset;
-    border-width: 3px;
-    background-color: #E3C8BD;
-    border-color: #E18D65;
 }
 
 /* styling for article */
@@ -141,15 +144,18 @@ figcaption{
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.358);
 
 }
+@media screen and (min-width: 60em){
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
 
-/* styling for footer */
-footer{
-    font-family: "Press Start 2P", serif;
-    font-size:14px;
-    color: black;
-    text-align: center;
-    background-color: #e0ca01;
-    border-style: outset;
-    border-color: black;
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
 }
 
