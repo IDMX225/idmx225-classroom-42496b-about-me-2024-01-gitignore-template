@@ -150,6 +150,35 @@ footer{
 
 }
 
+/*Styling for my video */
+#videosection h2{
+    font-family: "Press Start 2P", serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #E3C8BD;
+    border-style: solid;
+    border-color: #e4746e;
+    border-width: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.567);
+}
+
+#videosection {
+    text-align: center;
+    padding: 20px;
+}
+
+#myVideo {
+    width: 80%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e4746e;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.426);
+}
+
 /* Tablet size*/
 @media screen and (min-width: 60em){
     figure{
@@ -173,6 +202,12 @@ footer{
         max-width:100%;
         columns: 40rem;
     }
+
+    #myVideo {
+        width: 80%;
+        height: auto;
+    }
+
 }
 
 /* Large screen size */
@@ -192,6 +227,11 @@ footer{
 
     figure {
         display: block;
+    }
+
+    #myVideo {
+        width: 50%;
+        height: auto;
     }
 }
 
