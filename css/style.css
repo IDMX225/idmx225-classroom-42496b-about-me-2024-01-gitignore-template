@@ -179,6 +179,22 @@ footer{
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.426);
 }
 
+/* Styling for contact form */
+
+#contact h2{
+    font-family: "Press Start 2P", serif;
+    text-align: center;
+    padding: 10px;
+    border-style: double;
+    border-width: 1rem;
+    border-color: #41A4E1;
+    background-color: #B9E6E4;
+}
+
+#formElements {
+    display: grid;
+}
+
 /* Tablet size*/
 @media screen and (min-width: 60em){
     figure{
