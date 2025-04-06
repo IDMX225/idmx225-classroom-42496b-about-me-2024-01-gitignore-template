@@ -13,7 +13,7 @@ header {
     font-size: 30px;
     color: black;
     text-align: center;
-    background-color: #e0ca01;
+    background-color: #E0E000;
     border-style: outset;
     border-color: black;
 }
@@ -55,7 +55,7 @@ footer{
     font-size:14px;
     color: black;
     text-align: center;
-    background-color: #e0ca01;
+    background-color: #E0E000;
     border-style: outset;
     border-color: black;
 }
@@ -88,7 +88,7 @@ footer{
     background-color: #E1DCAE;
     border-style: ridge;
     border-width: 15px;
-    border-color: #E0CA01;
+    border-color: #E0E000;
     border-radius: 30px;
 }
 
