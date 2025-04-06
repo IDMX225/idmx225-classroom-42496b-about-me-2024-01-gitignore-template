@@ -1,5 +1,5 @@
 body {
-    background-color:#e1dcae8f;
+    background-color:#f4f3eb8f;
     font-family: "Roboto Mono", serif;
 } 
 
@@ -41,7 +41,7 @@ header {
     background-color:#E3C8BD;
     border-style: solid;
     border-width: 5px;
-    border-color:#E18D65;
+    border-color:#e4746e;
 }
 
 #education p {
@@ -185,6 +185,7 @@ footer{
     font-family: "Press Start 2P", serif;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
     border-style: double;
     border-width: 1rem;
     border-color: #41A4E1;
@@ -193,6 +194,49 @@ footer{
 
 #formElements {
     display: grid;
+    row-gap: .5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+#fieldset {
+    border: 2px solid;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1em;
+}
+
+legend {
+    border-radius: 5px;
+    background-color:#B9E6E4;
+    border: 1px solid #41A4E1;
+    padding: .5em;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#contact li{
+    margin: 1rem;;
+}
+
+#contact button {
+    border-radius: 5px;
+    background-color:#B9E6E4;
+    border: 1px solid #41A4E1;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
 }
 
 /* Tablet size*/
