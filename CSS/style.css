@@ -1,0 +1,125 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color:#cbcac7;
+    color: #1c2418;
+    text-align: center;
+    
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Times New Roman";
+    text-align-last: center;
+       
+}
+
+h1{
+
+font-size:  40px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+color:#8E4129;
+border: 10px solid #789a2e;
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+box-shadow: 25px 25px 5px rgba(0,0,0,.2)inset;
+background-color:#C1D6CF;
+
+padding: 10px;
+
+margin: 30px;
+
+
+}
+
+
+/* Hero Section*/
+
+#hero img {
+width: 300px;
+
+
+}
+/* Bio Section*/
+
+#bio {
+    text-align: center;
+
+}
+
+/* Hobbies Section*/
+
+#hobbies ul :nth-last-child(even) {
+    color: #8E4129;
+
+}
+
+/* Gallery Section*/
+
+#gallery {
+    border: 2px solid#61a5ed;
+    
+}
+
+#gallery img {
+
+    max-width:100%;
+}
+
+#gallery figure{
+    text-align: "center";
+}
+
+/*Literature */
+
+#lit {
+    border:2px solid #61a5ed;
+    margin-bottom: 2rem;
+}
+#lit div {
+padding:2rem;
+max-width: 40rem;
+margin:0 auto;
+}
+
+#lit div p {
+padding:0.3rem 0;
+clear:both;
+margin:0 auto;
+}
+
+/*Dropcaps*/
+
+#lit div p:nth-child(3n+1)::first-letter {
+
+    color:red;
+    background-image: radial-gradient(#ffff);
+    float:left;
+    font-size: 3em;
+    padding:25em;
+    margin-right:25em;
+    line-height:.65;
+    border: 4px outset #ffff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    border-top-left-radius: .2em;
+    border-bottom-right-radius:.2em;
+}
+    
+
+
+
+
+
+
+
