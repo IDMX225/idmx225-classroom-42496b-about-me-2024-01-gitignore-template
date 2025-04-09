@@ -3,7 +3,7 @@ body {
     font-family: "Roboto Mono", serif;
 } 
 
-h1 h3 {
+h3 {
     font-family: "Press Start 2P", serif;
 }
 
@@ -24,6 +24,7 @@ header {
     margin-right: auto;
     width: 50%;
 }
+
 
 #nameandcity {
     text-align: center;
@@ -110,7 +111,7 @@ footer{
 }
 
 /* styling for article */
- #content h2 {
+ #lit h2 {
     font-family: "Press Start 2P", serif;
     text-align: center;
     padding: 10px;
@@ -120,7 +121,7 @@ footer{
     background-color: #B9E6E4;
 }
 
-#content {
+#lit {
     margin-bottom: 15px;
     border-style: inset;
     border-width: 5px;
@@ -129,17 +130,17 @@ footer{
     
 }
 
-#content div {
+#lit div {
     padding: 2rem;
     max-width: 40rem;
     margin: 0 auto;
 } 
 
-#content div p{
+#lit div p{
     padding: 0.3rem 0;
 }
 
-#content p::first-letter {
+#lit p::first-letter {
     color:#41A4E1;
     float: left;
     font-size: 3rem;
