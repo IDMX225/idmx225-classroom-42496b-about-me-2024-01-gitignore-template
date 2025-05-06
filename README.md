@@ -144,4 +144,4 @@ Article sources:
 
 2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 
-3. 
+3. https://web.dev/articles/css-vs-javascript
