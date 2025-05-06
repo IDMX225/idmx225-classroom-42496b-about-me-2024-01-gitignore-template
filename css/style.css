@@ -135,8 +135,82 @@ footer{
     line-height: .65;
     border: 2px solid black;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.358);
-
 }
+
+/*Animation example taken from online to display a color changing square*/
+.color-box {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: colorChange 5s infinite alternate;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-color: #ff6b6b;
+    }
+    25% {
+      background-color: #feca57;
+    }
+    50% {
+      background-color: #48dbfb;
+    }
+    75% {
+      background-color: #1dd1a1;
+    }
+    100% {
+      background-color: #5f27cd;
+    }
+  }  
+
+  /* this is another style taken from the internet for an example for css animation for the article */
+  .grow-shrink {
+    display: inline-block;
+    animation: growShrink 2s ease-in-out infinite;
+  }
+  
+  @keyframes growShrink {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+  }
+
+/* Another CSS animation taken from the internet for an exmaple */
+.heart {
+    display: inline-block;
+    animation: bounce-glow 1.5s infinite ease-in-out;
+    transform-origin: center;
+    filter: drop-shadow(0 0 4px pink);
+  }
+  
+  /* Keyframes for bounce + glow + wiggle */
+  @keyframes bounce-glow {
+    0% {
+      transform: scale(1) rotate(0deg);
+      filter: drop-shadow(0 0 4px pink);
+    }
+    25% {
+      transform: scale(1.2) rotate(-5deg);
+      filter: drop-shadow(0 0 8px hotpink);
+    }
+    50% {
+      transform: scale(1.3) rotate(5deg);
+      filter: drop-shadow(0 0 12px deeppink);
+    }
+    75% {
+      transform: scale(1.2) rotate(-5deg);
+      filter: drop-shadow(0 0 8px hotpink);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      filter: drop-shadow(0 0 4px pink);
+    }
+  }
+  
 
 /*Styling for my video */
 #videosection h2{
