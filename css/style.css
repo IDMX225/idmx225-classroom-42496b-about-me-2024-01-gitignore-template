@@ -3,13 +3,18 @@ body {
     font-family: "Roboto Mono", serif;
 } 
 
+/* Add spacing between each section*/
+section, #education, #list, #contact, #videosection, #lit, #gallery {
+    margin: 2rem auto;
+}
+
 /* Styling for intro */
 
 .myavatar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
 }
 
 
@@ -44,9 +49,11 @@ footer{
     font-size:14px;
     color: black;
     text-align: center;
-    background-color: #E0E000;
+    background-color: #e4746e;
     border-style: outset;
     border-color: black;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
 
