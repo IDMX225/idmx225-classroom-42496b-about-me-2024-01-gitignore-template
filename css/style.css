@@ -26,6 +26,7 @@ body {
     font-family: "Press Start 2P", serif;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
     background-color:#E3C8BD;
     border-style: solid;
     border-width: 5px;
@@ -56,16 +57,57 @@ footer{
     border-style: solid;
     border-width: 5px;
     border-color: #41A4E1;
-    padding: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .listhead {
     font-family: "Press Start 2P", serif;
-    text-align: left;
+    font-size: 2rem;
+    color: #41A4E1;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
+
+#list ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#list li {
+    background-color: #F4F3EB;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#list li:hover {
+    background-color: #64c7ddcb;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#list li::before {
+    content: "🌟"; /* icon for each hobby */
+    margin-right: 10px;
+}
+
 
 /* styling for photo gallery */
 #galleryheading{
@@ -82,6 +124,7 @@ footer{
 
 #gallery{
     background-color: #00000015;
+    border-radius: 10px;
     border-style: solid;
     border-color: #e4746e;
     border-width: 5px;
@@ -102,6 +145,7 @@ footer{
     font-family: "Press Start 2P", serif;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
     border-style: double;
     border-width: 1rem;
     border-color: #41A4E1;
@@ -110,6 +154,7 @@ footer{
 
 #lit {
     margin-bottom: 15px;
+    border-radius: 10px;
     border-style: inset;
     border-width: 5px;
     border-color:#41A4E1;
