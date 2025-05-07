@@ -1,0 +1,248 @@
+body {
+    font-family:Raleway;
+    background-color: #91CABA;
+    color: #2C4B42;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Bebas Neue";
+    color: #000000;
+    font-size: 55pt;
+}
+
+h2 {
+    margin: .1em;
+}
+
+header {
+    text-align:center;
+    
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    max-width: 100%;
+    margin: 1rem;
+
+}
+
+#hero, footer {
+    color: #010202;
+    border: 2px solid #2C4B42;
+    text-align:center;
+    background-color: #c2f587;
+    padding: 10px;
+}
+/*Hero Section*/
+#hero img {
+    width: 300px;
+    height: auto;
+}
+
+/*Bio Section*/
+
+
+#bio, #hobbies, #video {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: left;
+    border: #2C4B42 2px solid;
+    background-color: #c2f587;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: #030302;
+
+    
+}
+
+/*Hobbies Section*/
+section#hobbies {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;
+    
+    align-items: right;
+    font-size: 1.5rem;
+    color: #030302;
+ 
+   
+}
+
+#hobbies  {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-between;
+    color: #57400e;
+    list-style-type: square;
+}
+#video {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    color: #57400e;
+    list-style-type: square;
+}
+/*Gallery Section*/
+
+    #gallery {
+        display: flex;
+    flex-direction: row;
+    border: 100px solid #c2f587;
+    text-align:center;
+    margin: 1rem;
+    padding: 1rem;
+
+   
+
+}
+    #gallery img {
+        display: flex;
+    flex-direction: column;
+        max-width: 100%;
+    }
+
+
+    #gallery figure {
+        text-align:center;
+    }
+
+/*Literature*/
+#lit {
+    border: 6px solid #c2f587;
+    text-align:center;
+
+}
+
+#lit div {
+    padding: 1rem;
+    max-width: 10rem;
+    margin: 0 auto;
+}
+#lit div p {
+    padding: 0.3rem 0;
+    clear:both;
+}
+
+/*Dropcaps*/
+#lit div p:first-child:first-letter {
+    color:#000000;
+    background-image:radial-gradient(#87F5D6, #2C4B42);
+    float:left;
+    font-size: 3rem;
+    line-height: .65;
+    border: 1px outset #2C4B42;
+    box-shadow: 2px 2px 2px #2C4B42;
+    padding: 0.1rem;
+}
+
+
+
+
+/* Large screen size */
+
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    background-color: #2C4B42;
+    color: black;
+
+}
+
+fieldset {
+    border: 2px solid #2C4B42;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 2rem;
+}
+
+legend {
+    background-color: #c2f587;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+    color: black;
+    font-style: bold;
+    
+
+}
+#contact ul {
+    list-style: none;
+    padding:0px;
+}
+#contact li {
+    margin: 1rem;
+}
+#contact button {
+    background-color: #c2f587;
+    color: #2C4B42;
+    border: 1px solid #2C4B42;
+    max-width: 400px;
+    justify-self: center;
+}
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure {
+        display: block;
+    }
+
+#formElements {
+        display: grid;
+        row-gap: .5em;
+    
+    }
+}
+    /*Tablet size */
+@media screen and (min-width: 60em) {
+    figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 40rem;
+    }
+}
