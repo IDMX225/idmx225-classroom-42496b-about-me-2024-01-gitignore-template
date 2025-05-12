@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <title>About Me</title>
+
+   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/nav.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--thebody element contains all content shown to a visitor-->
+
+    <header>
+        <!-- the header shows logo and page title -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo-96X96.svg" alt="Blue origami logo" />
+                <h1> Web Dev I - Online!</h1>
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- the main envelops important page content -->
+
+            <section id="hero">
+                    <!-- hero section: shows profile image, name & location -->
+                     <img src="img/lobster-mr (1).svg"
+                     alt="Avatar picture of me">
+                     <div>
+                        <p> Michael Rivas</p>
+                        <p> Branchburg, NJ</p>
+                     </div>
+                     <!-- close hero section -->
+
+            </section>
+<section class="row">
+            <div class="column">
+
+                <!-- bio section!: personal info (not too personal)-->
+
+                <h2> Biography:</h2>
+
+                    <p> Hello there</p>
+
+                    <p> My name is Michael Rivas. I am from Costa Rica. 
+                        I consider myself a hard worker and good person. 
+                        I move here to the states when I was 18 years old.
+                        I was able to meet great people here and learrned english. 
+                        I meet whos my wife 10 years ago and from then we have
+                        created a family </p>
+
+                    <p> I recently just became a father. I want to be a great 
+                        example for my daugher since she was born last month 
+                        on thr 6th. Its been the greatest experience ever. 
+                        I never thought I was going to love this much.
+                        We are still learning since she does not understand
+                        when is day time or night time. But every little moment
+                        is worth it. </p>
+            </div>
+
+            <div class="column" >
+                <h2>Hobbies:</h2>
+
+            <p> I would like to show in the gallery some of my hobbies that I have
+                mentioned before. To me my best time is when I spend it with my family.
+                Me and my wife love go on walks with our dog. Also, on of my biggest 
+                passions is playing soccer. I was pretty close to make it pro in my country
+                and since then, I have been playing just for fun. I love going to the gym 
+                at least 3 to 5 times a week which helps me with the stress. To me the best 
+                time to work out is at 5am. </p>
+
+            <p> I have created a good relationship with good as well and is through the bible
+                that I have found peace. I think every religion is important in this world; 
+                however, the relationship created with God is essential in my life. I enjoy 
+                going to church with my family. </p>
+
+            <p>Lastly, one of my dreams is to visit as many countries I can. I have been blessed 
+                to learn about some different cultures. Me and my wife were planning on going to 
+                Europe during this summer, but with baby now in our lives we have to postpone this 
+                trip to hipefully next year </p>
+
+            </div>
+
+        </section>
+
+        <section id="gallery">
+
+            <h2>Photo Gallery</h2>
+
+            <hr>
+
+            <figure>
+                <img src="img/soccer-640w.jpg"
+                alt="Tigres Stadium in Mexico">
+                <figcaption> Tigres is a soccer team in Monterrey Mexico</figcaption>
+
+            </figure>
+
+            <hr>
+
+            <figure>
+                <img src="img/gym- 640w.jpg"
+                alt="Love working out">
+                <figcaption> I like working out at least 5 times a week</figcaption>
+
+            </figure>
+
+
+            <hr>
+
+            <figure>
+                <img src="img/travel-640w.jpg"
+                alt="Traveling">
+                <figcaption> I love visiting new places and learning about new cultures</figcaption>
+
+            </figure>
+
+
+        </section>
+
+        <article id="lit">
+
+            <h2>Netlify Large Media Format</h2>
+
+        <div>
+<p> Netlify Large Media, a Git Large File Storage (LFS)
+    implementation, helps manage large assets like images,
+    audio, and video files in Git repositories connected 
+    to Netlify sites. It replaces these assets with text 
+    pointer files in the repository, storing the actual 
+    files on Netlify's servers. This reduces repository size,
+    speeds up clones, and enables on-the-fly image transformations</p>
+
+<p> How it works:
+    Large Media uses Git LFS, which is an extension to Git that allows
+    you to track large files without bloating your repository. Instead 
+    of storing the full binary file in the repository, LFS stores a pointer
+    to the file on a remote server (in this case, Netlify's servers). 
+    When you clone the repository, you only get the pointer, and the actual
+    file is fetched on demand.  </p>
+
+<p> Benefits: 
+    Smaller repositories: This means faster clones and easier 
+    repository management. 
+    Faster builds: Netlify can build your site faster because
+    it only needs to clone the code, not all the large assets. 
+    Image transformations: Netlify provides on-the-fly image 
+    transformations, allowing you to serve different sizes of 
+    the same image without storing multiple versions</p>
+
+<p> How to use it:
+    Enable Large Media: You'll need to enable Large Media on your 
+    Netlify site and in your local repository. 
+    Specify tracked files: You'll use the git lfs track command
+    to specify which files should be managed by LFS. 
+    Push your changes: When you push your repository, Git will 
+    store the pointers and upload the large files to Netlify's storage. </p>
+
+<p> Limitations:
+    Large Media is tied to a specific site and cannot be used with 
+    Deploy to Netlify buttons or repositories with multiple connected sites. 
+    You cannot create a new site from a fork of a Large-Media-enabled repository. 
+    Files tracked with Large Media are not available for build-time processing
+    (e.g., using image processing plugins in your site's build process). 
+    Large Media is not suitable for streaming audio or video files. </p>
+
+
+        </div>
+            
+
+
+            <section id="video">
+
+                <h2>A Short Video:</h2>
+
+            <div id="myVideo">
+
+
+                <iframe width="560" height="315" src=
+                "https://www.youtube.com/embed/lK7034zXXSw?si=vkcDFAjXrdPTPoX2" 
+                title="YouTube video player" frameborder="0" allow="accelerometer;
+                autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" referrerpolicy=
+                "strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+
+            </div>
+        </section>
+
+        <style>
+
+            #myVideo {
+                width: 300px;
+                display:block;
+                margin:auto;
+            }
+
+        </style>
+
+
+
+        <section id="contact">
+
+            <h2>Contact Us:</h2>
+
+            <form id="contactForm" name="contactForm" method="post"
+            data-netlify="true">
+
+
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+
+                        <!-- Name -->
+                        <label for="name">Name (required)</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <!-- Email -->
+                        <label for="email">Email (required)</label>
+                        <input type="email" id="email" name="email" required>
+
+
+                        <!-- Phone -->
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <!-- Phone type -->
+                        <label for="phonetype"> Phone type (optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value= "" selected> Select phone type</option>
+                            <option value= "Mobile">Mobile</opyion>
+                            <option value= "Work">Work</option>
+                            <option value= "Home">Home</option>
+                        </select>
+
+                        <!-- Message -->
+                        <label for="message"> Message (optional)</label>
+                        <textarea id="message" name=" message" rows="8"></textarea>
+
+                        <!-- Reply -->
+                         <fieldset>
+                            <legend>Would you like a reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply"value= "Yes a reply please.">
+                                   <label for="message-yes">Yes a reply would be nice.</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please." checked>
+                                    <label for="message-no">No, thanks.</label>
+                                </li>
+                            </ul>
+
+                         </fieldset>
+
+                         <!-- Submit -->
+                          <button type="submit">Send</button>
+
+                         
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+         ©2025 - Michael Rivas
+
+    </footer>
+
+</body>
+</html>

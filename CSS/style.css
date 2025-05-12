@@ -1,0 +1,214 @@
+body {
+    font-family: "Roboto";
+    background-color: #ffffff;
+    color:#000000;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Neuton";
+    text-align: center;
+    font-size:40pt;
+}
+
+h2 {
+    margin: .1em;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    color: #3579F0;
+    border: 2px solid #5679F0;
+    background-color: #dbdbdb;
+    text-align: center;
+    padding: 10px;
+}
+.column {
+   /* float: left;*/
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+   /* height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+
+/* Hero Section */
+
+#hero img {
+    width: 300px;
+}
+
+/* Bio Section */
+
+#bio {
+    text-align: center;
+}
+
+/* Hobbies Section */
+
+section#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+}
+
+#hobbies ul li:nth-child(even) {
+    color:#000
+}
+
+/* Gallery Section */
+
+#gallery {
+    border: 2px solid #5679F0;
+    margin-bottom:2rem;
+}
+
+#gallery img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery figure {
+    text-align: center;
+}
+#gallery :hover{
+    opacity: 50%;
+}
+
+/* Literature */
+#lit {
+    border: 2px solid #5679F0;
+    margin-bottom:2rem;
+}
+
+#lit div{
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+    clear:both;
+}
+
+/* Dropcaps */
+
+#lit div p: first-child:first-letter {
+    color:#5679F0;
+    background-image:radial-gradient(#FFF,#A3721C);
+    float:left;
+    font-size:3em;
+    padding: .25em;
+    margin-right: .25em;
+    line-height: .65;
+    border:4px outset#5679F0;
+    font-family:"Grenze Gotisch";
+    text-shadow:2px 2px 3px rgba(0,0,0,.5);
+    box-shadow:5px 5px 5px rgba(0,0,0,.5);
+    border-top-left-radius: .2em;
+    border-bottom-right-radius: .2em;
+}
+/* tablet size */
+@media screen and (min-width: 60em) {
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    figure img{
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
+    }
+}
+
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr {
+        display: none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure{
+        display:block;
+    }
+
+}
+
+/* Contact Form */
+
+#formElements {
+    display:grid;
+    row-gap: .5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width:600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid #5679F0;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius: 2rem;
+}
+
+legend{
+    background-color:#5679F0;
+    color: white;
+    padding:.5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding:.5em;
+    font-size:1rem;
+}
+
+#contact ul{
+    list-style:none;
+    padding:0px;
+}
+#contact li{
+    margin:1rem;
+}
+#contact button {
+    background-color:#5679F0;
+    color: white;
+    border: 1px solid #3579F0;
+    max-width:400px;
+    width:50%;
+    justify-self: center;
+}
